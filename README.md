@@ -1,16 +1,34 @@
 <p align="center">
-  <img src="assets/logo.png" alt="VoxSentry" width="900" />
+  <img src="assets/logo.png" alt="VoxSentry" width="800" />
 </p>
 
-VoxSentry
+<h1 align="center">VoxSentry</h1>
 
-VoxSentry is a modular multilingual language intelligence engine designed to transform raw speech and text into structured, machine-readable analytical artifacts.
+<p align="center">
+  <strong>Modular Multilingual Language Intelligence Engine</strong>
+</p>
 
-🧠 System Architecture
+<p align="center">
+  Transforming raw speech and text into structured analytical artifacts.
+</p>
 
-![VoxSentry Architecture](docs/architecture.png)
-Below is the conceptual architecture model:
+---
 
+## Overview
+
+**VoxSentry** is a modular multilingual language intelligence engine designed to convert raw audio and text inputs into structured, machine-readable outputs suitable for analytical workflows.
+
+The platform emphasizes deterministic processing stages, semantic normalization, and extensible architecture for research, investigative, and intelligence-aligned applications.
+
+---
+
+## 🧠 System Architecture
+
+<p align="center">
+  <img src="docs/architecture.png" alt="VoxSentry Architecture Diagram" width="950"/>
+</p>
+
+### Processing Pipeline
                 ┌─────────────────────────┐
                 │     Input Layer         │
                 │  (Audio / Text Files)   │
@@ -42,110 +60,118 @@ Below is the conceptual architecture model:
                 │  JSON / Text Artifacts  │
                 └─────────────────────────┘
 
-Design Goals:
+### Design Principles
 
-Deterministic pipeline stages
+- Deterministic pipeline stages  
+- Modular expandability  
+- Cross-language normalization  
+- Structured analytical outputs  
+- Auditability & reproducibility  
 
-Modular expandability
+---
 
-Language normalization across domains
+## 📦 Structured Output Schema
 
-Clean analytical outputs
+VoxSentry produces structured artifacts validated against:
 
-📦 Structured Output Schema (Example)
+### Example Artifact
 
-VoxSentry produces structured outputs for downstream analysis.
+```json
+{
+  "metadata": {
+    "source_file": "Arabic.mp3",
+    "detected_language": "ar",
+    "translation_language": "en",
+    "processing_timestamp": "2026-03-02T18:24:00Z"
+  },
+  "transcription": {
+    "original_text": "...",
+    "confidence_score": 0.94
+  },
+  "translation": {
+    "translated_text": "...",
+    "confidence_score": 0.91
+  },
+  "semantic_analysis": {
+    "entities": [],
+    "keywords": [],
+    "sentiment_score": 0.12
+  }
+}
 
-Example JSON artifact:
+## Capabilities
 
-### Artifact Schema
-VoxSentry outputs are validated against a JSON Schema:
-`src/VoxSentry/schemas/artifact.schema.json`
+VoxSentry enables structured multilingual language intelligence workflows, including:
 
-This structure enables:
+- Comparative cross-language analysis  
+- Entity cross-referencing  
+- Sentiment profiling  
+- Dashboard integration  
+- Knowledge graph ingestion  
 
-Comparative language analysis
+---
 
-Entity cross-referencing
+## 🎯 Elevation Path: ISR-Grade Research Tool
 
-Sentiment profiling
+VoxSentry is architected for scalable expansion into advanced intelligence-oriented workflows.
 
-Downstream integration with intelligence dashboards
+### 1️⃣ Multilingual OSINT Monitoring
 
-🎯 Elevation to ISR-Grade Research Tool
+- Social media ingestion pipelines  
+- Narrative tracking across languages  
+- Sentiment drift detection  
 
-VoxSentry is architected for expansion into:
+### 2️⃣ Cognitive Signal Extraction
 
-1. Multilingual OSINT Monitoring
+- Keyword clustering  
+- Topic modeling  
+- Narrative influence indicators  
+- Behavioral signal detection  
 
-Social media ingestion
+### 3️⃣ Cross-Language Correlation
 
-Cross-language narrative tracking
+- Message similarity detection  
+- Translation variance analysis  
+- Semantic distance scoring  
 
-Sentiment drift detection
+### 4️⃣ Analytical Export Pipelines
 
-2. Cognitive Signal Extraction
+- JSON → Dashboard ingestion  
+- CSV export for modeling  
+- API endpoint integration  
 
-Keyword clustering
+---
 
-Topic modeling
+## 🔒 Operational Design Principles
 
-Radicalization markers
+VoxSentry is designed with controlled, audit-friendly processing standards:
 
-Narrative influence indicators
+- Local-first processing  
+- No telemetry  
+- No external logging  
+- Controlled artifact generation  
+- Reproducible outputs  
+- Clear audit potential  
 
-3. Cross-Language Correlation
+---
 
-Same-message detection across languages
+## 🚀 Development Roadmap
 
-Translation variance analysis
+- [ ] Language confidence scoring module  
+- [ ] Batch ingestion mode  
+- [ ] Automated semantic clustering  
+- [ ] Entity confidence weighting  
+- [ ] Dashboard integration layer  
+- [ ] Dockerized deployment  
+- [ ] CI validation for translation consistency  
 
-Semantic similarity scoring
+---
 
-4. Analytical Export Pipelines
-
-JSON → Dashboard ingestion
-
-CSV export for statistical modeling
-
-API endpoint integration
-
-🔒 Operational Design Principles
-
-Local-first processing
-
-No telemetry
-
-Controlled artifact generation
-
-Reproducible analytical outputs
-
-Clear audit trail potential
-
-🚀 Future Development Roadmap
-
- Language confidence scoring module
-
- Batch ingestion mode
-
- Automated semantic clustering
-
- Entity confidence weighting
-
- Dashboard integration layer
-
- Dockerized deployment
-
- CI validation for translation consistency
-
-🧩 Integration Potential
+## 🧩 Integration Potential
 
 VoxSentry is designed to integrate with:
 
-Intelligence dashboards
-
-Knowledge graph systems
-
-Investigative data platforms
-
-OSINT automation pipelines
+- Intelligence dashboards  
+- Knowledge graph systems  
+- Investigative data platforms  
+- OSINT automation pipelines  
