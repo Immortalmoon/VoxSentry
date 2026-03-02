@@ -60,7 +60,7 @@ Example JSON artifact:
 
 ### Artifact Schema
 VoxSentry outputs are validated against a JSON Schema:
-- `src/VoxSentry/schemas/artifact.schema.json`
+`src/VoxSentry/schemas/artifact.schema.json`
 
 This structure enables:
 
