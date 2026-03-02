@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.svg" alt="VoxSentry" width="900" />
+  <img src="assets/logo.png" alt="VoxSentry" width="900" />
 </p>
 
 VoxSentry
