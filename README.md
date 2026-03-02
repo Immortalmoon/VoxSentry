@@ -58,33 +58,9 @@ VoxSentry produces structured outputs for downstream analysis.
 
 Example JSON artifact:
 
-{
-  "metadata": {
-    "source_file": "Arabic.mp3",
-    "detected_language": "ar",
-    "translation_language": "en",
-    "processing_timestamp": "2026-03-02T18:24:00Z"
-  },
-  "transcription": {
-    "original_text": "النص الأصلي هنا",
-    "confidence_score": 0.94
-  },
-  "translation": {
-    "translated_text": "The original text here",
-    "confidence_score": 0.91
-  },
-  "semantic_analysis": {
-    "entities": [
-      {
-        "entity": "Cairo",
-        "type": "LOCATION",
-        "confidence": 0.88
-      }
-    ],
-    "keywords": ["politics", "security", "speech"],
-    "sentiment_score": 0.12
-  }
-}
+### Artifact Schema
+VoxSentry outputs are validated against a JSON Schema:
+- `src/VoxSentry/schemas/artifact.schema.json`
 
 This structure enables:
 
