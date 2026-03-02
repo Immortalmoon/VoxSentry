@@ -98,6 +98,7 @@ VoxSentry produces structured artifacts validated against:
     "sentiment_score": 0.12
   }
 }
+```
 
 ## Capabilities
 
